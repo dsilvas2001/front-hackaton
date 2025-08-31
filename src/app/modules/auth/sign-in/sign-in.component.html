@@ -9,7 +9,7 @@
     <!-- Lado Imagen -->
     <div class="col-md-6 p-0">
       <img
-        src="https://img.freepik.com/free-photo/device-protected-by-cyber-security_23-2149270838.jpg?t=st=1756582456~exp=1756586056~hmac=8256cbaeda5f59e561526da02b043005481b56ec6c498fbb428db73c3fb10a40&w=1480"
+        src="../../../../assets/images/fondo_Sign_In.avif"
         alt="login"
         class="w-100 h-100"
         style="object-fit: cover"
@@ -56,8 +56,8 @@
           </div>
         </div>
 
-        <!-- Botón -->
-        <div class="d-grid">
+        <!-- Botón Acceder -->
+        <div class="d-grid mb-3">
           <button
             type="submit"
             class="btn rounded-pill"
@@ -67,15 +67,16 @@
           </button>
         </div>
 
-        <!-- Link -->
-        <div class="text-center mt-3">
-          <a
+        <!-- Botón Registrar -->
+        <div class="d-grid">
+          <button
+            type="button"
             routerLink="/Auth/sign-up"
-            class="small"
-            style="color: #003049; text-decoration: none"
+            class="btn rounded-pill"
+            style="background-color: #003049; color: white"
           >
-            Olvidastes la contraseña?
-          </a>
+            <i class="fa-solid fa-user-plus"></i> Registrar
+          </button>
         </div>
       </form>
     </div>

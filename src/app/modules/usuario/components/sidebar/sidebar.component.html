@@ -1,0 +1,71 @@
+<div
+  class="offcanvas-lg offcanvas-start text-bg-dark shadow"
+  tabindex="-1"
+  style="width: 250px; background-color: #003049"
+>
+  <div class="offcanvas-header border-bottom">
+    <h5 class="offcanvas-title">
+      <img
+        src="../../../../assets/images/logo/LOGOTIPO.ico"
+        class="me-2"
+        style="height: 30px"
+        alt="Logo"
+      />
+      VitalMindAI
+    </h5>
+    <button type="button" class="btn-close btn-close-white"></button>
+  </div>
+
+  <div class="offcanvas-body d-flex flex-column p-0">
+    <!-- Usuario -->
+    <div class="p-3 border-bottom">
+      <div class="d-flex align-items-center">
+        <div
+          class="rounded-circle d-flex align-items-center justify-content-center me-3"
+          style="
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+          "
+        >
+          <i class="fa-solid fa-user text-white"></i>
+        </div>
+        <div>
+          <p class="mb-0 fw-bold text-white">dddd</p>
+          <small class="text-success">● En línea</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menú -->
+    <ul class="nav flex-column p-2">
+      <li class="nav-item">
+        <a class="nav-link text-white" routerLink="/inicio">
+          <i class="fa-solid fa-house me-2"></i> Inicio
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" routerLink="/dashboard">
+          <i class="fa-solid fa-chart-line me-2"></i> Dashboard
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" routerLink="/usuarios">
+          <i class="fa-solid fa-users me-2"></i> Usuarios
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" routerLink="/configuracion">
+          <i class="fa-solid fa-gear me-2"></i> Configuración
+        </a>
+      </li>
+    </ul>
+
+    <!-- Logout -->
+    <div class="mt-auto border-top p-3">
+      <a class="nav-link text-white">
+        <i class="fa-solid fa-right-from-bracket me-2"></i> Cerrar sesión
+      </a>
+    </div>
+  </div>
+</div>
