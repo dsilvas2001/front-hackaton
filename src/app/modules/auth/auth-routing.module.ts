@@ -19,6 +19,7 @@ const routes: Routes = [
       {
         path: '**',
         redirectTo: 'sign-in',
+        pathMatch: 'full',
       },
     ],
   },
