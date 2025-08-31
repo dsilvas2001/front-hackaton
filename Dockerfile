@@ -17,7 +17,7 @@ RUN npm install
 COPY . .
 
 # Generate the production build
-RUN npm run build --prod
+RUN npm run build -- --configuration production
 
 ### STAGE 2: Run ###
 FROM nginxinc/nginx-unprivileged
@@ -27,6 +27,8 @@ COPY ./nginx.conf /etc/nginx/conf.d/default.conf
 
 # Copy the build artifacts from the build stage
 COPY --from=build /usr/src/app/dist/front-hackaton/browser /usr/share/nginx/html
+
+EXPOSE 8080
 
 
 # Start Nginx server
