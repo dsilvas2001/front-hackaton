@@ -26,7 +26,7 @@ FROM nginxinc/nginx-unprivileged
 COPY ./nginx.conf /etc/nginx/conf.d/default.conf
 
 # Copy the build artifacts from the build stage
-COPY --from=build /usr/src/app/dist/front-hackaton /usr/share/nginx/html
+COPY --from=build /usr/src/app/dist/front-hackaton/browser /usr/share/nginx/html
 
 
 # Start Nginx server
