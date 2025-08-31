@@ -1,0 +1,113 @@
+<div
+  class="container min-vh-100 d-flex align-items-center justify-content-center"
+  style="font-family: 'Poppins', sans-serif"
+>
+  <div
+    class="row w-100 shadow-lg rounded-4 bg-white overflow-hidden"
+    style="max-width: 950px"
+  >
+    <!-- Lado Imagen -->
+    <div class="col-md-6 p-0 d-none d-md-block">
+      <img
+        src="https://img.freepik.com/free-photo/register-now-document-filling-form-concept_53876-125596.jpg?t=st=1756602198~exp=1756605798~hmac=90c47b546070c4b39a82c6598dff424a1c6e69ac6c551dafd3e818409024cc96&w=1480"
+        alt="register"
+        class="w-100 h-100"
+        style="object-fit: cover"
+      />
+    </div>
+
+    <!-- Lado Formulario -->
+    <div class="col-md-6 p-5 d-flex flex-column justify-content-center">
+      <h3 class="fw-bold text-center mb-3" style="color: #669bbc">
+        Crear Cuenta
+      </h3>
+      <p class="text-center mb-4" style="color: #6c757d">
+        Únete a nuestra plataforma de manera rápida y segura 🚀
+      </p>
+
+      <form>
+        <!-- Nombre -->
+        <div class="mb-3">
+          <div class="input-group">
+            <span class="input-group-text" style="color: #669bbc">
+              <i class="fa-solid fa-user"></i>
+            </span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Nombre completo"
+              style="color: #003049"
+            />
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="mb-3">
+          <div class="input-group">
+            <span class="input-group-text" style="color: #669bbc">
+              <i class="fa-solid fa-envelope"></i>
+            </span>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Correo electrónico"
+              style="color: #003049"
+            />
+          </div>
+        </div>
+
+        <!-- Password -->
+        <div class="mb-3">
+          <div class="input-group">
+            <span class="input-group-text" style="color: #669bbc">
+              <i class="fa-solid fa-lock"></i>
+            </span>
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Contraseña"
+              style="color: #003049"
+            />
+          </div>
+        </div>
+
+        <!-- Confirmar Password -->
+        <div class="mb-4">
+          <div class="input-group">
+            <span class="input-group-text" style="color: #669bbc">
+              <i class="fa-solid fa-key"></i>
+            </span>
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Confirmar contraseña"
+              style="color: #003049"
+            />
+          </div>
+        </div>
+
+        <!-- Botón -->
+        <div class="d-grid">
+          <button
+            type="submit"
+            class="btn rounded-pill shadow"
+            style="background-color: #669bbc; color: white; font-weight: 600"
+          >
+            <i class="fa-solid fa-user-plus"></i> Registrarse
+          </button>
+        </div>
+
+        <!-- Link -->
+        <div class="text-center mt-4">
+          <span style="color: #6c757d">¿Ya tienes cuenta?</span>
+          <a
+            routerLink="/Auth/sign-in"
+            style="color: #003049; font-weight: 600; text-decoration: none"
+          >
+            Inicia sesión aquí
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
