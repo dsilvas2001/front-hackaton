@@ -8,6 +8,3 @@ services:
     ports:
       - "4200:80" # Mapea el puerto 3001 del contenedor al puerto 3005 de la máquina local
 
-    volumes:
-      - .:/usr/src/app # Monta el directorio actual en el contenedor
-
